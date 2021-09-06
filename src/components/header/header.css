@@ -1,0 +1,22 @@
+.header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	height: 80px;
+}
+.header-title {
+	margin: 0;
+	color: #fff;
+	font-size: 24px;
+}
+.header-list {
+	display: flex;
+	align-items: center;
+	margin: 0;
+	color: #fff;
+	list-style-type: none;
+}
+.header-list li {
+	margin-right: 20px;
+	font-size: 18px;
+}
