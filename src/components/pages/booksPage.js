@@ -12,9 +12,9 @@ const BooksPage = props => {
 		error: false,
 	})
 
-	// function onItemSelected(id) {
-	// 	setState({ selectedBook: id })
-	// }
+	function onItemSelected(id) {
+		setState({ selectedBook: id })
+	}
 
 	// componentDidCatch() {
 	// setState({

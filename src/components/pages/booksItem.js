@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React from 'react'
 import GotService from '../../services/gotService'
 import ItemDetails, { Field } from '../itemDetails'
 

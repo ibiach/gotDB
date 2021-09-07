@@ -13,7 +13,8 @@ export default props => {
 				itemList,
 			})
 		})
-	})
+		return () => {}
+	}, [])
 
 	const renderItems = arr => {
 		return arr.map(item => {
