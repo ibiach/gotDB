@@ -10,23 +10,12 @@ export default () => {
 
 	const [state, setstate] = useState({
 		selectedHouse: null,
-		error: false,
 	})
 
 	const onItemSelected = id => {
 		setstate({
 			selectedHouse: id,
 		})
-	}
-
-	// componentDidCatch() {
-	// 	setState({
-	// 		error: true,
-	// 	})
-	// }
-
-	if (state.error) {
-		return <ErrorMessage />
 	}
 
 	const itemList = (
@@ -46,5 +35,9 @@ export default () => {
 		</ItemDetails>
 	)
 
-	return <RowBlock left={itemList} right={itemDetails} />
+	try {
+		return <RowBlock left={itemList} right={itemDetails} />
+	} catch {
+		return <ErrorMessage />
+	}
 }
